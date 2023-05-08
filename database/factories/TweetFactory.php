@@ -17,6 +17,7 @@ class TweetFactory extends Factory
     public function definition(): array
     {
         return [
+            'user_id' => 1, // つぶやきを投稿したユーザーのIDをデフォルトで１とする
             'content' => $this->faker->realtext(100)
         ];
     }
